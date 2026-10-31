@@ -1,6 +1,8 @@
-# Registro de uso de IA: análise e planejamento
+# Registro de uso de IA
 
-Data: **31/10/2026**. Assistente utilizado: Codex. Este registro documenta as solicitações humanas desta fase e as decisões que orientaram a entrega. Novas solicitações de implementação deverão ser acrescentadas quando ocorrerem.
+Data: **31/10/2026**. Assistente utilizado nesta conversa: Codex. Este registro documenta as solicitações humanas, decisões metodológicas, o prompt de referência para implementação e a revisão dos resultados. As seções seguem a ordem das entregas; as descrições de fases anteriores são históricas.
+
+A seção 13 da especificação do trabalho (p. 9) pede documentar os prompts no apêndice. Este arquivo e o [prompt integral das etapas 1 e 2](prompts/implementacao-etapas-1-2.md) fornecem o material para esse apêndice, a ser preparado com o relatório final.
 
 ## Solicitação original
 
@@ -92,11 +94,11 @@ Foi explicado que Q75 destaca aproximadamente um quarto das observações de tre
 | Dois anos com teste externo vs. um ano com divisão interna | 2024 desenvolvimento e 2025 teste, sensor AQUA_M-T |
 | Percentil 75 vs. mediana, após explicação | Percentil 75: destacar o quarto de maior potência |
 
-## Contribuição da IA e evidência independente
+## Análise e planejamento: contribuição da IA e evidência independente
 
 A IA auxiliou na leitura dos requisitos, busca de fontes oficiais, elaboração de um programa de auditoria descritiva, análise dos arquivos, documentação do contrato de dados e planejamento dos seis módulos. A análise numérica foi executada sobre arquivos oficiais com hashes registrados, não gerada por estimativa textual.
 
-Nenhum algoritmo acadêmico foi implementado ou treinado nesta fase. Não existem métricas preditivas, revisão técnica por especialista ou validação operacional para relatar. Durante a execução, registrar prompts adicionais, alterações humanas e verificações realizadas; no relatório, incluir apêndice compacto com referência a este arquivo, respeitando 6–8 páginas.
+Nenhum algoritmo acadêmico foi implementado ou treinado nessa fase inicial. Naquele momento, não havia métricas preditivas, revisão técnica por especialista ou validação operacional para relatar. O relatório final deverá incluir apêndice compacto com referência a este arquivo, respeitando 6–8 páginas.
 
 ## Construção do dataset e preparação dos notebooks
 
@@ -110,4 +112,54 @@ O trecho selecionado para contexto pedia construir e auditar o dataset completo 
 
 A IA auxiliou na aquisição dos 24 arquivos oficiais, filtragem Brasil/Amazônia/AQUA_M-T, preservação de ausências, rastreabilidade e preparação dos folds/transformações. Produziu funções auxiliares de leitura/preparação, testes, ambiente com versões fixadas, dicionário e guia explicativo. As decisões de fonte, anos, sensor, atributos e quartil superior foram preservadas.
 
-O resultado contém 140.346 registros de desenvolvimento e 43.131 de teste. Foram executados 11 testes, conferência agregada com os produtos anuais do próprio INPE, reconstrução idêntica dos CSVs comprimidos e execução dos exemplos no kernel Jupyter. Não foram implementados os notebooks acadêmicos, ajustados modelos ou calculadas métricas preditivas de 2025; essa parte permanece sob execução do responsável.
+O resultado contém 140.346 registros de desenvolvimento e 43.131 de teste. Foram executados 11 testes, conferência agregada com os produtos anuais do próprio INPE, reconstrução idêntica dos CSVs comprimidos e execução dos exemplos no kernel Jupyter. Na entrega do dataset ainda não haviam sido implementados os notebooks acadêmicos nem ajustados modelos.
+
+## Prompt de referência para implementação assistida por IA
+
+Após discutir as comparações entre implementações próprias e bibliotecas, o responsável solicitou:
+
+```text
+Ok cria um arquivo markdown contendo o passo a passo para codar os dois notebooks e os dois arquivos arvore.py e linear.py. Apenas isso por enquanto, o relatório será feito ao final. Apenas esses 4 arquivos devem ser alterados
+```
+
+O Codex produziu o guia agora preservado em [prompts/implementacao-etapas-1-2.md](prompts/implementacao-etapas-1-2.md). Ele é registrado como **prompt de referência para implementação com assistência de IA**: contém o contexto, as interfaces, a sequência de trabalho, as fórmulas, as verificações e os requisitos de comparação. O corpo original foi preservado integralmente; o novo cabeçalho explica sua procedência e o escopo histórico.
+
+O guia foi inicialmente mantido como material interno. Sua publicação como registro acadêmico de uso de IA foi solicitada na revisão abaixo. As restrições originais de alterar somente quatro arquivos pertencem à rodada de implementação; a atualização documental foi autorizada posteriormente.
+
+SHA-256 do corpo original, antes do cabeçalho de registro:
+
+```text
+221222a4d29a55e0b3d61183fe559ea7101705f10b6029cc81c2547e6f172396
+```
+
+O registro identifica o roteiro disponibilizado para esse uso; a conversa de implementação não foi transcrita aqui. O responsável deve acrescentar outros prompts e intervenções humanas efetivamente usados, caso existam, antes de concluir o apêndice final.
+
+### Arquivos resultantes e rastreabilidade
+
+| Entrega | Commit |
+|---|---|
+| `arvore.py`: entropia, ganho e ID3 | [`0380670`](https://github.com/mh131105/fia-queimadas-amazonia/commit/0380670a67576028cafd2020909f1d3e8af31986) |
+| `etapa1.ipynb`: experimentos e comparação da árvore | [`c7e2404`](https://github.com/mh131105/fia-queimadas-amazonia/commit/c7e2404723b1e52d29492957e209ae241f042a4b) |
+| `linear.py`: fórmula fechada, gradiente, L2 e logística | [`88f0f1e`](https://github.com/mh131105/fia-queimadas-amazonia/commit/88f0f1e460c5d56974111084ae323a3752275412) |
+| `etapa2.ipynb`: verificações e comparações das regressões | [`a333fbb`](https://github.com/mh131105/fia-queimadas-amazonia/commit/a333fbb5bc577ba50e947067c12ecd749a3aba33) |
+
+## Revisão dos resultados e atualização documental
+
+Solicitação do responsável:
+
+```text
+Revisa os resultados, documenta o guia que voce criou como prompt para implementação com assistencia de IA, depois atualiza o readme
+```
+
+A revisão usou a versão `a333fbb5bc577ba50e947067c12ecd749a3aba33`, em Python 3.12.14 com as dependências fixadas do projeto. A IA auxiliou na inspeção do código, no confronto com as tarefas das seções 4.2 e 5.2 do PDF e na interpretação das métricas. A verificação executável incluiu:
+
+- Os 11 testes existentes de integridade, partições e preparação do dataset.
+- Execução completa dos dois notebooks com kernels novos, incluindo os testes sintéticos, os cinco folds espaciais e os cinco diagnósticos temporais de cada etapa.
+- Conferência das saídas textuais e numéricas com as salvas no repositório e geração das quatro figuras.
+- Verificação dos hashes dos notebooks originais, preservando os quatro arquivos de implementação.
+
+As métricas foram reproduzidas. As implementações próprias concordam numericamente com as referências, mas a utilidade preditiva observada é limitada: o ID3 teve recall espacial médio 0,012801 e a logística, 0,048038; a multivariada teve R² médio 0,021070. Esses resultados e as referências de maioria/média estão no [README](../README.md), com os desvios entre folds e os limites de interpretação.
+
+A revisão também explicitou que o lambda do Ridge foi selecionado com todos os folds espaciais de 2024. Seu diagnóstico temporal reutiliza essa escolha e não constitui uma avaliação prospectiva independente da seleção. Os notebooks não usam 2025 para ajuste, seleção ou avaliação de modelos. A inspeção dos dados na auditoria de qualidade é distinta dessa avaliação preditiva final, ainda pendente.
+
+Esta rodada atualiza a documentação e o registro do prompt. O relatório e seu apêndice, as etapas 3–6 e a avaliação final continuam para entregas posteriores.
