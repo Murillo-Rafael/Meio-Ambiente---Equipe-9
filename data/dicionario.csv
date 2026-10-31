@@ -1,0 +1,28 @@
+coluna,tipo_unidade,origem,papel,descricao,permite_ausencia
+id,texto UUID,INPE,identificador,Identifica a detecção; não é atributo preditivo.,não
+lat,"real, graus decimais",INPE,atributo,Latitude do pixel; faixa de integridade adotada para Brasil: -34 a 6.,não
+lon,"real, graus decimais",INPE,atributo,Longitude do pixel; faixa de integridade adotada para Brasil: -74 a -34.,não
+data_hora_gmt,data-hora ISO 8601 UTC,INPE,metadado temporal,Horário da passagem/detecção; terminado em Z.,não
+satelite,texto,INPE,filtro,Valor único mantido: AQUA_M-T.,não
+municipio,texto,INPE,contexto,Nome de município informado pela fonte.,preservado se houver
+estado,texto,INPE,contexto,Nome de estado informado pela fonte.,preservado se houver
+pais,texto,INPE,filtro,Valor único mantido: Brasil.,não
+municipio_id,texto de código,INPE,agrupamento,Código municipal da fonte; sete dígitos permitem agrupamento direto.,sim
+estado_id,texto de código,INPE,contexto,Código de estado preservado como texto.,sim
+pais_id,texto de código,INPE,contexto,Código de país preservado como texto.,sim
+numero_dias_sem_chuva,"real com valores inteiros, dias",INPE,atributo,Valores não negativos e inteiros; vazio/-999/inválido vira ausência; imputar só no treino.,sim
+precipitacao,"real, mm",INPE,atributo,Chuva acumulada associada à detecção; não negativa; imputar só no treino.,sim
+risco_fogo,"real, 0 a 1",INPE,contexto,Índice composto oficial; excluído dos seis atributos principais e dos alvos.,sim
+bioma,texto,INPE,filtro,"Valor único mantido: Amazônia; classificação fornecida pelo INPE, sem nova sobreposição de malha.",não
+frp,"real, MW",INPE,alvo contínuo,"Potência radiativa do pixel, finita e não negativa; nunca imputada nem incluída em X.",não
+arquivo_origem,texto,derivado,proveniência,Nome do CSV mensal original.,não
+linha_origem,inteiro >= 2,derivado,proveniência,"Número do registro lógico CSV; cabeçalho=1, primeira observação=2; preserva referência ao original.",não
+sha256_origem,texto hexadecimal de 64 caracteres,derivado,proveniência,"Hash do arquivo original, conferido no manifesto de fontes.",não
+numero_dias_sem_chuva_ausente,inteiro 0 ou 1,derivado,qualidade,1 indica ausência após validação; não entra nos seis atributos padrão.,não
+precipitacao_ausente,inteiro 0 ou 1,derivado,qualidade,1 indica ausência após validação; não entra nos seis atributos padrão.,não
+ano,inteiro,derivado do horário UTC,partição,2024 desenvolvimento; 2025 teste externo.,não
+mes,inteiro 1 a 12,derivado do horário UTC,atributo,"Mês da detecção; tabela mantém representação original, sem codificação cíclica.",não
+hora_utc,"real, 0 <= hora < 24",derivado do horário UTC,atributo,Hora + minuto/60 + segundo/3600; pode refletir aspectos de observação do sensor.,não
+particao,texto,derivado do ano,partição,desenvolvimento ou teste.,não
+grupo_validacao,texto,derivado de município/coordenadas,agrupamento,"municipio:CODIGO; na ausência de código de sete dígitos, celula_025:LAT:LON em grade de 0,25 grau.",não
+fold_espacial,inteiro 0 a 4,GroupKFold em 2024,validação,Indica o fold em que a linha será validação; não usar como atributo; vazio em 2025.,somente em 2025

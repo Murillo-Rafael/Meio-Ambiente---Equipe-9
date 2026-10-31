@@ -1,0 +1,84 @@
+{
+  "versao": 1,
+  "fonte_manifesto_sha256": "41c1d5c6791dd6a17109d9e417de61a21d749af92c1a46780069c42735c2e627",
+  "arquivos": {
+    "desenvolvimento_2024.csv.gz": {
+      "linhas": 140346,
+      "bytes": 6678997,
+      "sha256": "f98d03da6cfe8f1e5dfe5fc0487e7fb7bba6e90372305e35fab1cb6434520d1e"
+    },
+    "teste_2025.csv.gz": {
+      "linhas": 43131,
+      "bytes": 2206080,
+      "sha256": "78567d0656bcc632abf3de3eef4fa49c7bb519b690b4d0fec164037326deb4ed"
+    }
+  },
+  "filtros": {
+    "pais": "Brasil",
+    "bioma": "Amazônia",
+    "satelite": "AQUA_M-T"
+  },
+  "particoes": {
+    "desenvolvimento": 2024,
+    "teste": 2025
+  },
+  "construcao": {
+    "python": "3.12.14",
+    "pacotes": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.9.1"
+    },
+    "codigo_sha256": {
+      "utils.py": "cadca3ccb277bc36fdf4995c808dd5e1fee9ac7a7139b13c1b7402c9b035285b",
+      "scripts/preparar_dados.py": "5d1631dc71f384bb25c7d77cce23815f40ca0e1ba5606e563559a6377c279f79"
+    }
+  },
+  "colunas": [
+    "id",
+    "lat",
+    "lon",
+    "data_hora_gmt",
+    "satelite",
+    "municipio",
+    "estado",
+    "pais",
+    "municipio_id",
+    "estado_id",
+    "pais_id",
+    "numero_dias_sem_chuva",
+    "precipitacao",
+    "risco_fogo",
+    "bioma",
+    "frp",
+    "arquivo_origem",
+    "linha_origem",
+    "sha256_origem",
+    "numero_dias_sem_chuva_ausente",
+    "precipitacao_ausente",
+    "ano",
+    "mes",
+    "hora_utc",
+    "particao",
+    "grupo_validacao",
+    "fold_espacial"
+  ],
+  "atributos": [
+    "numero_dias_sem_chuva",
+    "precipitacao",
+    "lat",
+    "lon",
+    "mes",
+    "hora_utc"
+  ],
+  "alvo_regressao": "frp",
+  "alvo_classificacao": "frp >= percentil 75 do treino corrente",
+  "limiar_frp_mw_ajuste_final_2024": 58.4,
+  "politica_teste": "2025: somente integridade e cobertura; sem métricas ou distribuição de FRP",
+  "artefatos_auditoria": {
+    "exclusoes.csv.gz": {
+      "linhas": 0,
+      "sha256": "85e60931e1ec6ff155e30ff0e1e0aaa60b4eedd1edcf5258059f479fd3192400"
+    }
+  }
+}

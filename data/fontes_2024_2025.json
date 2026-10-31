@@ -1,0 +1,155 @@
+{
+  "data_acesso": "2026-10-31",
+  "fonte": "INPE — Programa Queimadas",
+  "periodo": [
+    2024,
+    2025
+  ],
+  "catalogo": "https://dados.gov.br/dados/conjuntos-dados/monitoramento-de-queimadas",
+  "arquivos": [
+    {
+      "arquivo": "focos_mensal_br_202401.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202401.csv",
+      "bytes": 24074215,
+      "sha256": "4237031cacf97bd4d988782fe537b48f711d3e42b601fe710182338eeb95d45f"
+    },
+    {
+      "arquivo": "focos_mensal_br_202402.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202402.csv",
+      "bytes": 24331390,
+      "sha256": "d5a52ccdcc01612cadc2b3b8d02fb738373f7549d0fee7a74acaa2b713af156e"
+    },
+    {
+      "arquivo": "focos_mensal_br_202403.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202403.csv",
+      "bytes": 18485407,
+      "sha256": "517e2beee89b0dba83c67ab93a0fc978a0f6dcd7fab95a2c07a865242daa238d"
+    },
+    {
+      "arquivo": "focos_mensal_br_202404.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202404.csv",
+      "bytes": 7868296,
+      "sha256": "2bf38f1243524f9b8406adaad66c96a953921d6e38fd2dac25315b552740f10d"
+    },
+    {
+      "arquivo": "focos_mensal_br_202405.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202405.csv",
+      "bytes": 24287947,
+      "sha256": "f5bf4745b42d7041ed5a9fdbf2f68817cb3e7ca515a70b4a6fb4a18fbe6611be"
+    },
+    {
+      "arquivo": "focos_mensal_br_202406.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202406.csv",
+      "bytes": 56645609,
+      "sha256": "8418ce36d5691de131da351ff4a9e63b88265fb9143e7f8719b80b7905d2ee30"
+    },
+    {
+      "arquivo": "focos_mensal_br_202407.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202407.csv",
+      "bytes": 79328823,
+      "sha256": "f8844c14c64830d6f6cf2d79a910fbf9574fdafc518d1c72299e91fcffe355cc"
+    },
+    {
+      "arquivo": "focos_mensal_br_202408.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202408.csv",
+      "bytes": 358780960,
+      "sha256": "a240957e39a7dd6e0d996529b1babf063dfe396845625cc37561a659bda74b0a"
+    },
+    {
+      "arquivo": "focos_mensal_br_202409.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202409.csv",
+      "bytes": 408041015,
+      "sha256": "3c3afc9c18f6384eb09b1fb1fd4c6b19d003f23de1624971eb9a111a38f3ab9d"
+    },
+    {
+      "arquivo": "focos_mensal_br_202410.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202410.csv",
+      "bytes": 158261440,
+      "sha256": "dc4766380f30c2317d98e908702457be0f17568bfd1de4778d8f91ae7491755d"
+    },
+    {
+      "arquivo": "focos_mensal_br_202411.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202411.csv",
+      "bytes": 90758938,
+      "sha256": "7363a86e380cacdb610b23afa783588ed4252c6ef89ebde50f8f41bd89e9588d"
+    },
+    {
+      "arquivo": "focos_mensal_br_202412.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202412.csv",
+      "bytes": 36580806,
+      "sha256": "2a43d9a97f4ea6040fd6adcfab7ac5567f2a528e0d527bbe91fed61cd74ccaee"
+    },
+    {
+      "arquivo": "focos_mensal_br_202501.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202501.csv",
+      "bytes": 10134994,
+      "sha256": "1c402d13737e8dd39092040cf4b5d553197d48f81c1a043d401c08b04edce479"
+    },
+    {
+      "arquivo": "focos_mensal_br_202502.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202502.csv",
+      "bytes": 6591741,
+      "sha256": "3dba74421aa991e70e670bebeb15e5790845beb26b88905ec468d970188b52a9"
+    },
+    {
+      "arquivo": "focos_mensal_br_202503.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202503.csv",
+      "bytes": 7879790,
+      "sha256": "e488a9a88552f4eecac75a4e8a0259a7ee776dd7e62df0b4596a26cbc2cf63a3"
+    },
+    {
+      "arquivo": "focos_mensal_br_202504.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202504.csv",
+      "bytes": 4736146,
+      "sha256": "95d5a56ae97d2a003ed77758c234b9252b163882e977db13b59f93b003a13d4b"
+    },
+    {
+      "arquivo": "focos_mensal_br_202505.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202505.csv",
+      "bytes": 17088719,
+      "sha256": "8e9db54a47055a552b9b185ae3556752e93dbbfc1ffe2c3890f3f50e3a8c9bd1"
+    },
+    {
+      "arquivo": "focos_mensal_br_202506.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202506.csv",
+      "bytes": 26686843,
+      "sha256": "9702b5df5e7de262a3169cb8520d43583836af2511dbb74cd06ef1da1765230b"
+    },
+    {
+      "arquivo": "focos_mensal_br_202507.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202507.csv",
+      "bytes": 38895068,
+      "sha256": "9d7de05d2583e651f2b6f9bc03eee522211bdf95490e3ef1ee926b408fd157a1"
+    },
+    {
+      "arquivo": "focos_mensal_br_202508.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202508.csv",
+      "bytes": 93587739,
+      "sha256": "9420a1babbf627ef80d9b39ba1d8e2b656f88e98e11c622952094704be7106c3"
+    },
+    {
+      "arquivo": "focos_mensal_br_202509.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202509.csv",
+      "bytes": 131327049,
+      "sha256": "16b127050803d59fc4f4be37987e2f77c2a330884365ac476a05855f007148ec"
+    },
+    {
+      "arquivo": "focos_mensal_br_202510.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202510.csv",
+      "bytes": 130562825,
+      "sha256": "102ffd5ca6280c65253e944c5606059e9f764bea837c824e52a0cb68c70b59cb"
+    },
+    {
+      "arquivo": "focos_mensal_br_202511.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202511.csv",
+      "bytes": 56289561,
+      "sha256": "15414aac26788ba6125f2522549797cafc7195c1f70e6c8e8554e447a748a24e"
+    },
+    {
+      "arquivo": "focos_mensal_br_202512.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202512.csv",
+      "bytes": 23897889,
+      "sha256": "b6f9b421725faa47c8008c21f765bc600919a632351108751fde586a6d84802c"
+    }
+  ]
+}
