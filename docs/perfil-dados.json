@@ -1,0 +1,742 @@
+{
+  "data_acesso": "2026-10-31",
+  "escopo": "auditoria de arquivos integrais selecionados; não é amostra aleatória dos anos",
+  "arquivos": [
+    {
+      "arquivo": "focos_br_ref_2024.zip",
+      "sha256": "a2cec2f67483a4a95956a471d5cbdb7b3cbd93b21c9b87c845a649ef89abf4e1",
+      "bytes": 10727110,
+      "colunas": [
+        "id_bdq",
+        "foco_id",
+        "lat",
+        "lon",
+        "data_pas",
+        "pais",
+        "estado",
+        "municipio",
+        "bioma"
+      ],
+      "linhas_brasil": 278299,
+      "paises": {
+        "Brasil": 278299
+      },
+      "linhas_por_bioma": {
+        "Mata Atlântica": 21328,
+        "Caatinga": 20235,
+        "Cerrado": 81468,
+        "Amazônia": 140346,
+        "Pantanal": 14498,
+        "Pampa": 424
+      },
+      "linhas_amazonia": 140346,
+      "satelites_amazonia": {
+        "não informado no arquivo": 140346
+      },
+      "sensor_verificavel_no_arquivo": false,
+      "aqua_amazonia": null
+    },
+    {
+      "arquivo": "focos_br_ref_2025.zip",
+      "sha256": "63b144c47279991dca0f2007e23e15b4a932355b6c93d033d81a245a8eab56ca",
+      "bytes": 5906397,
+      "colunas": [
+        "id_bdq",
+        "foco_id",
+        "lat",
+        "lon",
+        "data_pas",
+        "pais",
+        "estado",
+        "municipio",
+        "bioma"
+      ],
+      "linhas_brasil": 136393,
+      "paises": {
+        "Brasil": 136393
+      },
+      "linhas_por_bioma": {
+        "Caatinga": 23424,
+        "Mata Atlântica": 12352,
+        "Amazônia": 43131,
+        "Cerrado": 56058,
+        "Pantanal": 724,
+        "Pampa": 704
+      },
+      "linhas_amazonia": 43131,
+      "satelites_amazonia": {
+        "não informado no arquivo": 43131
+      },
+      "sensor_verificavel_no_arquivo": false,
+      "aqua_amazonia": null
+    },
+    {
+      "arquivo": "focos_mensal_br_202401.csv",
+      "sha256": "4237031cacf97bd4d988782fe537b48f711d3e42b601fe710182338eeb95d45f",
+      "bytes": 24074215,
+      "colunas": [
+        "id",
+        "lat",
+        "lon",
+        "data_hora_gmt",
+        "satelite",
+        "municipio",
+        "estado",
+        "pais",
+        "municipio_id",
+        "estado_id",
+        "pais_id",
+        "numero_dias_sem_chuva",
+        "precipitacao",
+        "risco_fogo",
+        "bioma",
+        "frp"
+      ],
+      "linhas_brasil": 152585,
+      "paises": {
+        "Brasil": 152585
+      },
+      "linhas_por_bioma": {
+        "Caatinga": 20811,
+        "Pantanal": 34547,
+        "Mata Atlântica": 13692,
+        "Amazônia": 61127,
+        "Cerrado": 22166,
+        "Pampa": 241,
+        "": 1
+      },
+      "linhas_amazonia": 61127,
+      "satelites_amazonia": {
+        "METOP-C": 590,
+        "NOAA-21": 13709,
+        "NPP-375D": 4020,
+        "NOAA-20": 13777,
+        "AQUA_M-M": 200,
+        "TERRA_M-T": 889,
+        "GOES-16": 14938,
+        "NPP-375": 9508,
+        "AQUA_M-T": 2049,
+        "METOP-B": 748,
+        "TERRA_M-M": 699
+      },
+      "sensor_verificavel_no_arquivo": true,
+      "aqua_amazonia": {
+        "linhas": 2049,
+        "inicio": "2024-01-01 18:02:00",
+        "fim": "2024-01-31 17:30:00",
+        "estados": {
+          "MATO GROSSO": 464,
+          "AMAZONAS": 160,
+          "PARÁ": 633,
+          "RORAIMA": 604,
+          "AMAPÁ": 3,
+          "MARANHÃO": 131,
+          "ACRE": 8,
+          "TOCANTINS": 7,
+          "RONDÔNIA": 39
+        },
+        "meses": {
+          "2024-01": 2049
+        },
+        "duplicatas_id": 0,
+        "duplicatas_local_horario_sensor": 0,
+        "invalidos_ou_ausentes": {
+          "frp": 0,
+          "numero_dias_sem_chuva": 28,
+          "precipitacao": 0,
+          "risco_fogo": 15,
+          "lat": 0,
+          "lon": 0
+        },
+        "casos_completos_sem_risco_fogo": 2021,
+        "estatisticas": {
+          "frp": {
+            "n": 2049,
+            "min": 3.6,
+            "q25": 11.1,
+            "mediana": 17.4,
+            "q75": 31.3,
+            "max": 1933.8,
+            "media": 33.46632503660322
+          },
+          "numero_dias_sem_chuva": {
+            "n": 2021,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 2.0,
+            "q75": 6.0,
+            "max": 35.0,
+            "media": 4.335972290945077
+          },
+          "precipitacao": {
+            "n": 2049,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 0.1,
+            "q75": 1.52,
+            "max": 63.57,
+            "media": 2.0036652025378237
+          },
+          "risco_fogo": {
+            "n": 2034,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 0.06,
+            "q75": 0.6,
+            "max": 1.0,
+            "media": 0.29997541789577187
+          },
+          "lat": {
+            "n": 2049,
+            "min": -16.20694,
+            "q25": -9.14546,
+            "mediana": -3.04515,
+            "q75": 0.88242,
+            "max": 5.00648,
+            "media": -3.8225168374816985
+          },
+          "lon": {
+            "n": 2049,
+            "min": -73.07961,
+            "q25": -60.35896,
+            "mediana": -56.21542,
+            "q75": -51.86292,
+            "max": -44.2919,
+            "media": -55.79610631527574
+          }
+        },
+        "frp_descritiva_reservada_ao_teste": false
+      }
+    },
+    {
+      "arquivo": "focos_mensal_br_202404.csv",
+      "sha256": "2bf38f1243524f9b8406adaad66c96a953921d6e38fd2dac25315b552740f10d",
+      "bytes": 7868296,
+      "colunas": [
+        "id",
+        "lat",
+        "lon",
+        "data_hora_gmt",
+        "satelite",
+        "municipio",
+        "estado",
+        "pais",
+        "municipio_id",
+        "estado_id",
+        "pais_id",
+        "numero_dias_sem_chuva",
+        "precipitacao",
+        "risco_fogo",
+        "bioma",
+        "frp"
+      ],
+      "linhas_brasil": 49823,
+      "paises": {
+        "Brasil": 49823
+      },
+      "linhas_por_bioma": {
+        "Amazônia": 18909,
+        "Cerrado": 14230,
+        "Caatinga": 2295,
+        "Pantanal": 5877,
+        "Mata Atlântica": 8203,
+        "Pampa": 309
+      },
+      "linhas_amazonia": 18909,
+      "satelites_amazonia": {
+        "GOES-16": 3420,
+        "METOP-C": 270,
+        "NPP-375D": 1585,
+        "NOAA-20": 4169,
+        "NOAA-21": 4491,
+        "AQUA_M-M": 101,
+        "TERRA_M-T": 517,
+        "AQUA_M-T": 1117,
+        "NPP-375": 2745,
+        "TERRA_M-M": 224,
+        "METOP-B": 261,
+        "MSG-03": 9
+      },
+      "sensor_verificavel_no_arquivo": true,
+      "aqua_amazonia": {
+        "linhas": 1117,
+        "inicio": "2024-04-01 16:48:00",
+        "fim": "2024-04-30 18:34:00",
+        "estados": {
+          "MARANHÃO": 7,
+          "PARÁ": 52,
+          "MATO GROSSO": 453,
+          "RORAIMA": 519,
+          "AMAPÁ": 2,
+          "RONDÔNIA": 49,
+          "AMAZONAS": 32,
+          "ACRE": 3
+        },
+        "meses": {
+          "2024-04": 1117
+        },
+        "duplicatas_id": 0,
+        "duplicatas_local_horario_sensor": 0,
+        "invalidos_ou_ausentes": {
+          "frp": 0,
+          "numero_dias_sem_chuva": 1,
+          "precipitacao": 0,
+          "risco_fogo": 18,
+          "lat": 0,
+          "lon": 0
+        },
+        "casos_completos_sem_risco_fogo": 1116,
+        "estatisticas": {
+          "frp": {
+            "n": 1117,
+            "min": 3.6,
+            "q25": 9.6,
+            "mediana": 14.7,
+            "q75": 28.0,
+            "max": 1782.8,
+            "media": 31.104297224709043
+          },
+          "numero_dias_sem_chuva": {
+            "n": 1116,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 2.0,
+            "q75": 5.0,
+            "max": 12.0,
+            "media": 2.802867383512545
+          },
+          "precipitacao": {
+            "n": 1117,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 0.0,
+            "q75": 1.17,
+            "max": 59.48,
+            "media": 2.9818173679498656
+          },
+          "risco_fogo": {
+            "n": 1099,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 0.04,
+            "q75": 0.53,
+            "max": 1.0,
+            "media": 0.2613921747042766
+          },
+          "lat": {
+            "n": 1117,
+            "min": -16.26445,
+            "q25": -12.12055,
+            "mediana": -3.51957,
+            "q75": 1.88866,
+            "max": 5.12573,
+            "media": -5.018706794986571
+          },
+          "lon": {
+            "n": 1117,
+            "min": -69.3812,
+            "q25": -60.86562,
+            "mediana": -60.1046,
+            "q75": -54.4359,
+            "max": -45.3786,
+            "media": -58.04962144136079
+          }
+        },
+        "frp_descritiva_reservada_ao_teste": false
+      }
+    },
+    {
+      "arquivo": "focos_mensal_br_202410.csv",
+      "sha256": "dc4766380f30c2317d98e908702457be0f17568bfd1de4778d8f91ae7491755d",
+      "bytes": 158261440,
+      "colunas": [
+        "id",
+        "lat",
+        "lon",
+        "data_hora_gmt",
+        "satelite",
+        "municipio",
+        "estado",
+        "pais",
+        "municipio_id",
+        "estado_id",
+        "pais_id",
+        "numero_dias_sem_chuva",
+        "precipitacao",
+        "risco_fogo",
+        "bioma",
+        "frp"
+      ],
+      "linhas_brasil": 1006520,
+      "paises": {
+        "Brasil": 1006520
+      },
+      "linhas_por_bioma": {
+        "Mata Atlântica": 46986,
+        "Cerrado": 280647,
+        "Caatinga": 89598,
+        "Amazônia": 467435,
+        "Pantanal": 121424,
+        "Pampa": 430
+      },
+      "linhas_amazonia": 467435,
+      "satelites_amazonia": {
+        "METOP-C": 6982,
+        "GOES-16": 90882,
+        "TERRA_M-M": 7309,
+        "METOP-B": 9000,
+        "MSG-03": 652,
+        "NPP-375D": 39863,
+        "NOAA-20": 110949,
+        "NOAA-21": 108103,
+        "AQUA_M-M": 2263,
+        "TERRA_M-T": 3764,
+        "NPP-375": 71499,
+        "AQUA_M-T": 16169
+      },
+      "sensor_verificavel_no_arquivo": true,
+      "aqua_amazonia": {
+        "linhas": 16169,
+        "inicio": "2024-10-01 17:58:00",
+        "fim": "2024-10-31 18:26:00",
+        "estados": {
+          "MATO GROSSO": 1377,
+          "RONDÔNIA": 1201,
+          "AMAZONAS": 2557,
+          "PARÁ": 7120,
+          "RORAIMA": 122,
+          "MARANHÃO": 1304,
+          "TOCANTINS": 71,
+          "ACRE": 1876,
+          "AMAPÁ": 541
+        },
+        "meses": {
+          "2024-10": 16169
+        },
+        "duplicatas_id": 0,
+        "duplicatas_local_horario_sensor": 0,
+        "invalidos_ou_ausentes": {
+          "frp": 0,
+          "numero_dias_sem_chuva": 300,
+          "precipitacao": 0,
+          "risco_fogo": 85,
+          "lat": 0,
+          "lon": 0
+        },
+        "casos_completos_sem_risco_fogo": 15869,
+        "estatisticas": {
+          "frp": {
+            "n": 16169,
+            "min": 0.0,
+            "q25": 12.5,
+            "mediana": 22.3,
+            "q75": 44.9,
+            "max": 3902.8,
+            "media": 46.19822499845383
+          },
+          "numero_dias_sem_chuva": {
+            "n": 15869,
+            "min": 0.0,
+            "q25": 1.0,
+            "mediana": 3.0,
+            "q75": 5.0,
+            "max": 120.0,
+            "media": 5.066607851786502
+          },
+          "precipitacao": {
+            "n": 16169,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 0.0,
+            "q75": 0.3,
+            "max": 119.37,
+            "media": 1.0157239161358156
+          },
+          "risco_fogo": {
+            "n": 16084,
+            "min": 0.0,
+            "q25": 0.23,
+            "mediana": 0.61,
+            "q75": 0.95,
+            "max": 1.0,
+            "media": 0.5709829644367073
+          },
+          "lat": {
+            "n": 16169,
+            "min": -16.19146,
+            "q25": -8.99436,
+            "mediana": -4.38169,
+            "q75": -2.7445,
+            "max": 5.0499,
+            "media": -5.567250703197477
+          },
+          "lon": {
+            "n": 16169,
+            "min": -73.65775,
+            "q25": -62.46371,
+            "mediana": -54.9827,
+            "q75": -50.45391,
+            "max": -43.91671,
+            "media": -56.474406866843964
+          }
+        },
+        "frp_descritiva_reservada_ao_teste": false
+      }
+    },
+    {
+      "arquivo": "focos_mensal_br_202501.csv",
+      "sha256": "1c402d13737e8dd39092040cf4b5d553197d48f81c1a043d401c08b04edce479",
+      "bytes": 10134994,
+      "colunas": [
+        "id",
+        "lat",
+        "lon",
+        "data_hora_gmt",
+        "satelite",
+        "municipio",
+        "estado",
+        "pais",
+        "municipio_id",
+        "estado_id",
+        "pais_id",
+        "numero_dias_sem_chuva",
+        "precipitacao",
+        "risco_fogo",
+        "bioma",
+        "frp"
+      ],
+      "linhas_brasil": 63439,
+      "paises": {
+        "Brasil": 63439
+      },
+      "linhas_por_bioma": {
+        "Amazônia": 24237,
+        "Pantanal": 943,
+        "Cerrado": 10858,
+        "Mata Atlântica": 11347,
+        "Caatinga": 14275,
+        "Pampa": 1779
+      },
+      "linhas_amazonia": 24237,
+      "satelites_amazonia": {
+        "GOES-16": 3404,
+        "METOP-B": 292,
+        "TERRA_M-M": 237,
+        "METOP-C": 227,
+        "NOAA-21": 6056,
+        "NPP-375D": 1438,
+        "NOAA-20": 6254,
+        "AQUA_M-M": 72,
+        "TERRA_M-T": 284,
+        "NPP-375": 4736,
+        "AQUA_M-T": 1219,
+        "MSG-03": 18
+      },
+      "sensor_verificavel_no_arquivo": true,
+      "aqua_amazonia": {
+        "linhas": 1219,
+        "inicio": "2025-01-01 16:54:00",
+        "fim": "2025-01-31 18:38:00",
+        "estados": {
+          "MARANHÃO": 187,
+          "RONDÔNIA": 28,
+          "MATO GROSSO": 162,
+          "AMAZONAS": 60,
+          "RORAIMA": 384,
+          "PARÁ": 356,
+          "AMAPÁ": 3,
+          "ACRE": 35,
+          "TOCANTINS": 4
+        },
+        "meses": {
+          "2025-01": 1219
+        },
+        "duplicatas_id": 0,
+        "duplicatas_local_horario_sensor": 0,
+        "invalidos_ou_ausentes": {
+          "frp": 0,
+          "numero_dias_sem_chuva": 25,
+          "precipitacao": 0,
+          "risco_fogo": 13,
+          "lat": 0,
+          "lon": 0
+        },
+        "casos_completos_sem_risco_fogo": 1194,
+        "estatisticas": {
+          "numero_dias_sem_chuva": {
+            "n": 1194,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 1.0,
+            "q75": 3.0,
+            "max": 16.0,
+            "media": 2.252931323283082
+          },
+          "precipitacao": {
+            "n": 1219,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 0.24,
+            "q75": 2.105,
+            "max": 47.59,
+            "media": 2.394298605414274
+          },
+          "risco_fogo": {
+            "n": 1206,
+            "min": 0.0,
+            "q25": 0.01,
+            "mediana": 0.11,
+            "q75": 0.6974999999999999,
+            "max": 1.0,
+            "media": 0.33628524046434494
+          },
+          "lat": {
+            "n": 1219,
+            "min": -16.24584,
+            "q25": -4.36276,
+            "mediana": -2.14229,
+            "q75": 1.151815,
+            "max": 4.95497,
+            "media": -2.703656907301067
+          },
+          "lon": {
+            "n": 1219,
+            "min": -73.29797,
+            "q25": -60.414199999999994,
+            "mediana": -55.73859,
+            "q75": -48.70263,
+            "max": -44.05598,
+            "media": -55.50729220672683
+          }
+        },
+        "frp_descritiva_reservada_ao_teste": true
+      }
+    },
+    {
+      "arquivo": "focos_mensal_br_202510.csv",
+      "sha256": "102ffd5ca6280c65253e944c5606059e9f764bea837c824e52a0cb68c70b59cb",
+      "bytes": 130562825,
+      "colunas": [
+        "id",
+        "lat",
+        "lon",
+        "data_hora_gmt",
+        "satelite",
+        "municipio",
+        "estado",
+        "pais",
+        "municipio_id",
+        "estado_id",
+        "pais_id",
+        "numero_dias_sem_chuva",
+        "precipitacao",
+        "risco_fogo",
+        "bioma",
+        "frp"
+      ],
+      "linhas_brasil": 823767,
+      "paises": {
+        "Brasil": 823767
+      },
+      "linhas_por_bioma": {
+        "Cerrado": 468811,
+        "Amazônia": 176050,
+        "Mata Atlântica": 31274,
+        "Caatinga": 136500,
+        "Pantanal": 10515,
+        "Pampa": 617
+      },
+      "linhas_amazonia": 176050,
+      "satelites_amazonia": {
+        "GOES-19": 33925,
+        "TERRA_M-M": 2288,
+        "NOAA-21": 42068,
+        "NPP-375D": 11567,
+        "NOAA-20": 43714,
+        "AQUA_M-M": 407,
+        "TERRA_M-T": 1363,
+        "NPP-375": 32850,
+        "AQUA_M-T": 7868
+      },
+      "sensor_verificavel_no_arquivo": true,
+      "aqua_amazonia": {
+        "linhas": 7868,
+        "inicio": "2025-10-01 17:32:00",
+        "fim": "2025-10-31 18:49:00",
+        "estados": {
+          "PARÁ": 3682,
+          "MARANHÃO": 1011,
+          "RONDÔNIA": 360,
+          "ACRE": 558,
+          "MATO GROSSO": 813,
+          "AMAZONAS": 874,
+          "RORAIMA": 128,
+          "TOCANTINS": 109,
+          "AMAPÁ": 333
+        },
+        "meses": {
+          "2025-10": 7868
+        },
+        "duplicatas_id": 0,
+        "duplicatas_local_horario_sensor": 0,
+        "invalidos_ou_ausentes": {
+          "frp": 0,
+          "numero_dias_sem_chuva": 147,
+          "precipitacao": 0,
+          "risco_fogo": 20,
+          "lat": 0,
+          "lon": 0
+        },
+        "casos_completos_sem_risco_fogo": 7721,
+        "estatisticas": {
+          "numero_dias_sem_chuva": {
+            "n": 7721,
+            "min": 0.0,
+            "q25": 1.0,
+            "mediana": 3.0,
+            "q75": 5.0,
+            "max": 72.0,
+            "media": 4.704960497344904
+          },
+          "precipitacao": {
+            "n": 7868,
+            "min": 0.0,
+            "q25": 0.0,
+            "mediana": 0.0,
+            "q75": 0.47,
+            "max": 70.66,
+            "media": 1.0054778851042196
+          },
+          "risco_fogo": {
+            "n": 7848,
+            "min": 0.0,
+            "q25": 0.19,
+            "mediana": 0.55,
+            "q75": 0.97,
+            "max": 1.0,
+            "media": 0.553690112130479
+          },
+          "lat": {
+            "n": 7868,
+            "min": -15.87981,
+            "q25": -8.45814,
+            "mediana": -4.486940000000001,
+            "q75": -2.9794775000000002,
+            "max": 5.07738,
+            "media": -5.2537037938485005
+          },
+          "lon": {
+            "n": 7868,
+            "min": -73.28971,
+            "q25": -58.2891925,
+            "mediana": -51.85046,
+            "q75": -49.3897525,
+            "max": -43.90105,
+            "media": -54.28541117946111
+          }
+        },
+        "frp_descritiva_reservada_ao_teste": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "data_acesso": "2026-10-31",
+  "fonte_principal": "INPE — Programa Queimadas",
+  "catalogo_indicado": "https://dados.gov.br/dados/conjuntos-dados/monitoramento-de-queimadas",
+  "especificacao": {
+    "arquivo_original": "2o-Trab-SimbML-Incerteza.pdf",
+    "sha256": "108741c111314387c9102a8002707faeb4c9058b0be0dad302d953ef89e42f23",
+    "paginas": 10,
+    "data_documento": "2026-10-15",
+    "redistribuido": false
+  },
+  "arquivos_auditados": [
+    {
+      "arquivo": "focos_br_ref_2024.zip",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/anual/Brasil_sat_ref/focos_br_ref_2024.zip",
+      "bytes": 10727110,
+      "sha256": "a2cec2f67483a4a95956a471d5cbdb7b3cbd93b21c9b87c845a649ef89abf4e1",
+      "papel": "auditoria de esquema anual"
+    },
+    {
+      "arquivo": "focos_br_ref_2025.zip",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/anual/Brasil_sat_ref/focos_br_ref_2025.zip",
+      "bytes": 5906397,
+      "sha256": "63b144c47279991dca0f2007e23e15b4a932355b6c93d033d81a245a8eab56ca",
+      "papel": "auditoria de esquema anual"
+    },
+    {
+      "arquivo": "focos_mensal_br_202401.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202401.csv",
+      "bytes": 24074215,
+      "sha256": "4237031cacf97bd4d988782fe537b48f711d3e42b601fe710182338eeb95d45f",
+      "papel": "piloto de integridade e cobertura mensal"
+    },
+    {
+      "arquivo": "focos_mensal_br_202404.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202404.csv",
+      "bytes": 7868296,
+      "sha256": "2bf38f1243524f9b8406adaad66c96a953921d6e38fd2dac25315b552740f10d",
+      "papel": "piloto de integridade e cobertura mensal"
+    },
+    {
+      "arquivo": "focos_mensal_br_202410.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202410.csv",
+      "bytes": 158261440,
+      "sha256": "dc4766380f30c2317d98e908702457be0f17568bfd1de4778d8f91ae7491755d",
+      "papel": "piloto de integridade e cobertura mensal"
+    },
+    {
+      "arquivo": "focos_mensal_br_202501.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202501.csv",
+      "bytes": 10134994,
+      "sha256": "1c402d13737e8dd39092040cf4b5d553197d48f81c1a043d401c08b04edce479",
+      "papel": "piloto de integridade e cobertura mensal"
+    },
+    {
+      "arquivo": "focos_mensal_br_202510.csv",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/mensal/Brasil/focos_mensal_br_202510.csv",
+      "bytes": 130562825,
+      "sha256": "102ffd5ca6280c65253e944c5606059e9f764bea837c824e52a0cb68c70b59cb",
+      "papel": "piloto de integridade e cobertura mensal"
+    }
+  ]
+}
