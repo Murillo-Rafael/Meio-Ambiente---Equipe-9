@@ -1,5 +1,7 @@
 # Análise da fonte e viabilidade
 
+> Documento histórico do piloto. O dataset integral de 24 meses já foi construído; consultar o [guia atual](dataset.md) e a [auditoria completa](auditoria-dataset.json). Os números e as pendências abaixo descrevem a fase inicial.
+
 Data de acesso: **31/10/2026**. Escopo desta fase: análise descritiva e proposta de uso. Nenhum resultado preditivo foi produzido.
 
 ## 1. Pergunta aprovada

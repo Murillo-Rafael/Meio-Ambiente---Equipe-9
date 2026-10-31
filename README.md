@@ -6,7 +6,7 @@ O projeto estuda a potência radiativa (FRP) de focos **já detectados** no biom
 
 ## Estado atual
 
-**Trabalho em desenvolvimento.** A auditoria inicial dos dados está disponível. O dataset integral, os seis notebooks, o relatório e a apresentação ainda serão produzidos; nenhum modelo foi implementado ou treinado.
+**Dataset construído e auditado para implementar os notebooks.** Os arquivos de desenvolvimento (2024) e teste (2025), a preparação dos atributos e as divisões de validação estão disponíveis. Os seis notebooks, os modelos acadêmicos, o relatório final e a apresentação ainda serão produzidos.
 
 Recorte metodológico: bioma Amazônia no Brasil, sensor AQUA_M-T, desenvolvimento em 2024 e teste em 2025. A classificação destacará FRP igual ou superior ao percentil 75 do treino, com limiar congelado no teste. Esse rótulo é estatístico, sem equivalência automática com gravidade ambiental.
 
@@ -14,26 +14,56 @@ Recorte metodológico: bioma Amazônia no Brasil, sensor AQUA_M-T, desenvolvimen
 
 | Documento | Conteúdo |
 |---|---|
-| [Análise dos dados](docs/analise-dados.md) | Auditoria, limitações, atributos, alvos e contrato do dataset |
+| [Guia do dataset](docs/dataset.md) | Explicação do dataset, limpeza, atributos, alvos, ambiente e exemplos de uso nos notebooks |
+| [Dicionário](data/dicionario.csv) | Tipos, unidades, origem e papel das 27 colunas |
+| [Auditoria completa](docs/auditoria-dataset.json) | Cobertura, filtragem, ausências e cinco folds espaciais/temporais |
+| [Fontes de 2024–2025](data/fontes_2024_2025.json) e [produtos](data/dataset/manifesto.json) | URLs, hashes e contagens do dataset integral |
+| [Análise inicial dos dados](docs/analise-dados.md) | Estudo anterior de viabilidade com cinco meses, preservado como referência |
 | [Fontes](docs/fontes.md) | Fontes oficiais e distinção entre consultado e ainda não verificado |
 | [Uso de IA](docs/uso-de-ia.md) | Registro de prompts e escolhas metodológicas para o apêndice exigido |
-| [Manifesto](data/manifesto.json) e [perfil dos dados](docs/perfil-dados.json) | URLs, hashes e resultados calculados da auditoria |
 
-## Evidência da análise
+## Dados prontos para os notebooks
 
-Sete arquivos oficiais auditados: dois anuais e cinco mensais. Os anuais verificados não oferecem FRP e meteorologia; os mensais serão a fonte de modelagem. Nos cinco meses inspecionados, o recorte Amazônia/AQUA_M-T contém **28.422 registros**, dos quais **27.921 (98,24%)** têm FRP, meteorologia central e coordenadas completas. Os meses são um piloto de cobertura, não uma amostra anual aleatória.
+- [Desenvolvimento de 2024](data/dataset/desenvolvimento_2024.csv.gz): usar para implementar, comparar e selecionar modelos.
+- [Teste de 2025](data/dataset/teste_2025.csv.gz): reservar para a avaliação final, após encerrar escolhas em 2024.
 
-Todas as linhas e o alvo do dataset virão do INPE. Dados do INMET poderão complementar atributos se uma avaliação de cobertura e qualidade justificar sua inclusão. A associação com estações ainda não foi realizada.
+**140.346 registros em 2024** e **43.131 em 2025**, em dois CSVs comprimidos que somam aproximadamente 8,89 MB. Os dois arquivos derivados estão no GitHub. Eles contêm todas as detecções válidas do recorte nos 24 meses, sem amostragem. Os originais maiores ficam fora do Git e podem ser obtidos pelo manifesto. Esta versão utiliza somente o INPE, inclusive para os atributos meteorológicos; não houve associação com estações externas.
 
-## Reproduzir a auditoria atual
+## Ambiente e início rápido
 
-Requer Python **3.11 ou superior**, sem dependências externas. Na raiz do projeto:
+Ambiente validado: **Python 3.12.14**. Na raiz do projeto, com `uv`:
 
 ```sh
-python3 scripts/analisar_fontes.py --baixar
+uv venv --python 3.12.14
+uv pip sync --python .venv/bin/python requirements.txt
+.venv/bin/python -m ipykernel install --prefix .venv --name fia --display-name "FIA (Python 3.12)"
+.venv/bin/jupyter lab
 ```
 
-O comando obtém aproximadamente 348 MB de originais quando ausentes, valida SHA-256 e regenera `docs/perfil-dados.json`. Para usar somente os arquivos locais, omitir `--baixar`. Detalhes em [data/README.md](data/README.md). `data/raw/` e `data/processed/` são locais e ficam fora do Git; a reprodução é feita a partir das fontes e do manifesto.
+Usar o kernel **FIA (Python 3.12)**. Para ler e preparar uma divisão, sem treinar modelos:
+
+```python
+from utils import carregar_dados, iterar_folds, preparar_particao
+
+dados = carregar_dados(2024)
+fold, treino, validacao = next(iterar_folds(dados, "espacial"))
+particao = preparar_particao(treino, validacao, "padronizada")
+X_treino = particao.X_treino
+y_reg_treino = particao.y_reg_treino
+y_cls_treino = particao.y_cls_treino
+```
+
+A imputação, a padronização e o Q75 são calculados somente no treino da divisão. Para a árvore didática, usar `"discretizada"`; para valores sem padronização, `"numerica"`. O [guia](docs/dataset.md) explica os alvos, as duas estratégias de validação e os limites de interpretação.
+
+## Reconstruir e verificar
+
+```sh
+.venv/bin/python scripts/baixar_fontes.py --baixar
+.venv/bin/python scripts/preparar_dados.py
+.venv/bin/python -m unittest discover -s tests -v
+```
+
+O primeiro comando baixa somente os originais ausentes e confere os hashes dos 24 meses. O segundo reconstrói as tabelas e a auditoria, sem ajustar modelos. Os testes verificam qualidade, separações espaciais/temporais e ausência de vazamento na preparação. Detalhes em [data/README.md](data/README.md).
 
 As instruções de execução dos modelos e de compilação do artigo serão adicionadas quando esses artefatos existirem.
 

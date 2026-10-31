@@ -97,3 +97,17 @@ Foi explicado que Q75 destaca aproximadamente um quarto das observações de tre
 A IA auxiliou na leitura dos requisitos, busca de fontes oficiais, elaboração de um programa de auditoria descritiva, análise dos arquivos, documentação do contrato de dados e planejamento dos seis módulos. A análise numérica foi executada sobre arquivos oficiais com hashes registrados, não gerada por estimativa textual.
 
 Nenhum algoritmo acadêmico foi implementado ou treinado nesta fase. Não existem métricas preditivas, revisão técnica por especialista ou validação operacional para relatar. Durante a execução, registrar prompts adicionais, alterações humanas e verificações realizadas; no relatório, incluir apêndice compacto com referência a este arquivo, respeitando 6–8 páginas.
+
+## Construção do dataset e preparação dos notebooks
+
+Solicitação adicional do responsável em 31/10/2026:
+
+```text
+Por favor favor, contrói e audita esse dataset para que eu possa implementar os notebooks, cria um documento auxiliar explicando o dataset.
+```
+
+O trecho selecionado para contexto pedia construir e auditar o dataset completo de 2024–2025, preparar o tratamento de ausências, as divisões de validação e o ambiente reproduzível. Foi mantida a orientação de publicar no GitHub somente os materiais acadêmicos e os necessários à reprodução.
+
+A IA auxiliou na aquisição dos 24 arquivos oficiais, filtragem Brasil/Amazônia/AQUA_M-T, preservação de ausências, rastreabilidade e preparação dos folds/transformações. Produziu funções auxiliares de leitura/preparação, testes, ambiente com versões fixadas, dicionário e guia explicativo. As decisões de fonte, anos, sensor, atributos e quartil superior foram preservadas.
+
+O resultado contém 140.346 registros de desenvolvimento e 43.131 de teste. Foram executados 11 testes, conferência agregada com os produtos anuais do próprio INPE, reconstrução idêntica dos CSVs comprimidos e execução dos exemplos no kernel Jupyter. Não foram implementados os notebooks acadêmicos, ajustados modelos ou calculadas métricas preditivas de 2025; essa parte permanece sob execução do responsável.
