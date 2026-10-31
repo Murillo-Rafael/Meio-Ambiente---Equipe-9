@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+tmp/
+data/raw/
+data/processed/
+output/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
