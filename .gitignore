@@ -12,3 +12,9 @@ output/
 *.toc
 *.synctex.gz
 
+# Planejamento e registros internos ficam somente no ambiente local.
+.local/
+/docs/plano.md
+/docs/requisitos.md
+/docs/decisoes.md
+

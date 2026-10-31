@@ -6,7 +6,7 @@ Data de acesso: **31/10/2026**. Escopo desta fase: análise descritiva e propost
 
 **Em focos de fogo já detectados no bioma Amazônia brasileiro, como estimar a potência radiativa e identificar a faixa de maior potência a partir de atributos meteorológicos, espaciais e temporais?**
 
-O responsável aprovou: bioma Amazônia no Brasil; sensor AQUA_M-T; 2024 para desenvolvimento; 2025 para teste; classificação pelo percentil 75 do treino. A troca da base originalmente sugerida no trabalho foi autorizada pelo professor, **segundo informação do responsável**. Não foi apresentada comprovação documental dessa autorização.
+Recorte adotado: bioma Amazônia no Brasil; sensor AQUA_M-T; 2024 para desenvolvimento; 2025 para teste; classificação pelo percentil 75 do treino. A troca da base originalmente sugerida no trabalho foi autorizada pelo professor, **segundo informação do responsável**. Não foi apresentada comprovação documental dessa autorização.
 
 A base contém detecções positivas. O objetivo não será prever existência de fogo em locais sem observação, nem distinguir queima controlada de incêndio. A unidade é um registro de detecção em um pixel e horário, não um incêndio independente.
 
@@ -107,4 +107,4 @@ A FRP é potência radiativa de um pixel; não mede diretamente área queimada, 
 
 **Viável para as seis etapas acadêmicas**, pois os arquivos mensais inspecionados oferecem alvo contínuo, rótulo binário derivável e atributos interpretáveis. O suporte preditivo desses atributos continua desconhecido. Não será legítimo ajustar dados ou escolher um recorte para atingir as faixas de desempenho ilustradas no PDF.
 
-Próxima fase autorizável: construir e auditar o dataset completo, antes de implementar a árvore. Esta entrega se encerra na análise e no planejamento.
+A construção e auditoria dos 24 meses ainda estão pendentes. Os resultados aqui apresentados se limitam aos arquivos do piloto.

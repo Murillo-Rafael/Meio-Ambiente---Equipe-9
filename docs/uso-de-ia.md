@@ -89,8 +89,6 @@ Foi explicado que Q75 destaca aproximadamente um quarto das observações de tre
 |---|---|
 | Potência de focos detectados vs. previsão de novas ocorrências | Potência dos focos detectados |
 | Bioma Amazônia vs. estado do Amazonas vs. Amazônia Legal | Bioma Amazônia no Brasil |
-| Nome e visibilidade do repositório | `fia-queimadas-amazonia`, privado, conta `mh131105` |
-| Autoria e Signed-off-by vs. assinatura criptográfica | Autoria e Signed-off-by: Matheus Garcia `<matheus.garcia@icomp.ufam.edu.br>` |
 | Dois anos com teste externo vs. um ano com divisão interna | 2024 desenvolvimento e 2025 teste, sensor AQUA_M-T |
 | Percentil 75 vs. mediana, após explicação | Percentil 75: destacar o quarto de maior potência |
 

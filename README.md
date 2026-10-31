@@ -6,20 +6,17 @@ O projeto estuda a potência radiativa (FRP) de focos **já detectados** no biom
 
 ## Estado atual
 
-**Etapas do projeto concluídas: análise e planejamento.** Nenhum modelo foi implementado ou treinado. O dataset integral, os seis notebooks, o relatório e a apresentação pertencem à execução futura.
+**Trabalho em desenvolvimento.** A auditoria inicial dos dados está disponível. O dataset integral, os seis notebooks, o relatório e a apresentação ainda serão produzidos; nenhum modelo foi implementado ou treinado.
 
-Decisões confirmadas: recorte do bioma Amazônia no Brasil, sensor AQUA_M-T, desenvolvimento em 2024 e teste em 2025. A classificação destacará FRP igual ou superior ao percentil 75 do treino, com limiar congelado no teste. Esse rótulo é estatístico, sem equivalência automática com gravidade ambiental. O repositório é privado.
+Recorte metodológico: bioma Amazônia no Brasil, sensor AQUA_M-T, desenvolvimento em 2024 e teste em 2025. A classificação destacará FRP igual ou superior ao percentil 75 do treino, com limiar congelado no teste. Esse rótulo é estatístico, sem equivalência automática com gravidade ambiental.
 
 ## Documentação
 
 | Documento | Conteúdo |
 |---|---|
 | [Análise dos dados](docs/analise-dados.md) | Auditoria, limitações, atributos, alvos e contrato do dataset |
-| [Requisitos do PDF](docs/requisitos.md) | Todas as seis etapas, entregáveis, rubrica e evidências previstas |
-| [Plano de execução](docs/plano.md) | Sequência de trabalho, validação, estrutura futura e commits |
-| [Decisões](docs/decisoes.md) | Escolhas aprovadas pelo responsável e pendências delimitadas |
 | [Fontes](docs/fontes.md) | Fontes oficiais e distinção entre consultado e ainda não verificado |
-| [Uso de IA](docs/uso-de-ia.md) | Solicitações e decisões para o futuro apêndice |
+| [Uso de IA](docs/uso-de-ia.md) | Registro de prompts e escolhas metodológicas para o apêndice exigido |
 | [Manifesto](data/manifesto.json) e [perfil dos dados](docs/perfil-dados.json) | URLs, hashes e resultados calculados da auditoria |
 
 ## Evidência da análise
@@ -38,8 +35,8 @@ python3 scripts/analisar_fontes.py --baixar
 
 O comando obtém aproximadamente 348 MB de originais quando ausentes, valida SHA-256 e regenera `docs/perfil-dados.json`. Para usar somente os arquivos locais, omitir `--baixar`. Detalhes em [data/README.md](data/README.md). `data/raw/` e `data/processed/` são locais e ficam fora do Git; a reprodução é feita a partir das fontes e do manifesto.
 
-As instruções de execução dos modelos e de compilação do artigo serão adicionadas quando esses artefatos existirem. O próximo pacote é **montar e auditar o dataset completo de 2024–2025**, antes da árvore de decisão.
+As instruções de execução dos modelos e de compilação do artigo serão adicionadas quando esses artefatos existirem.
 
 ## Histórico e autoria
 
-Commits atômicos em português, com autoria **Matheus Garcia** e `Signed-off-by`, conforme autorizado. Esse registro de autoria não equivale a assinatura criptográfica. A sequência futura de commits está no plano; não concentrar a implementação em um único commit ao final.
+Autoria: **Matheus Garcia**. O histórico registra contribuições incrementais com `Signed-off-by`.
