@@ -163,3 +163,17 @@ As métricas foram reproduzidas. As implementações próprias concordam numeric
 A revisão também explicitou que o lambda do Ridge foi selecionado com todos os folds espaciais de 2024. Seu diagnóstico temporal reutiliza essa escolha e não constitui uma avaliação prospectiva independente da seleção. Os notebooks não usam 2025 para ajuste, seleção ou avaliação de modelos. A inspeção dos dados na auditoria de qualidade é distinta dessa avaliação preditiva final, ainda pendente.
 
 Esta rodada atualiza a documentação e o registro do prompt. O relatório e seu apêndice, as etapas 3–6 e a avaliação final continuam para entregas posteriores.
+
+
+## Etapa 3 — Probabilidade (`etapa3.ipynb`)
+
+Data: **01/11/2026**. Assistente: Claude. A Etapa 3 foi solicitada com o PDF da especificação e o repositório até as etapas 1 e 2.
+
+```text
+eu tenho um trabalho com a especificação que está no pdf que estou te enviando. foi dividido o trabalho em 6 partes, fiquei responsável pela terceira parte. o zip contêm o que já existe do trabalho até agora. a terceira parte seria essa, e gostaria que fizesse tudo que seja necessário relacionado a essa etapa somente:
+"Etapa 3 — Entender as probabilidades do problema
+Em etapa3.ipynb, podemos investigar perguntas como: “Entre os focos detectados, como a proporção de FRP elevada varia com períodos longos sem chuva?”. Precisamos construir uma distribuição conjunta de duas variáveis binárias, calcular probabilidades marginais e condicionais, aplicar a regra da cadeia com três variáveis e o Teorema de Bayes. Também devemos verificar se dois atributos são independentes quando conhecemos a classe. Os cortes das variáveis serão definidos no treino.
+Exigência: seção 6, p. 6. "
+```
+
+Escolhas metodológicas registradas: F = FRP ≥ Q75 do treino; S = dias sem chuva ≥ mediana do treino (mesmo corte da representação `discretizada`); R = precipitação > mediana do treino (0 mm; desigualdade estrita porque a mediana é zero); intervalos por bootstrap de municípios; independência condicional avaliada por φ, informação mútua e qui-quadrado, priorizando a magnitude. 2025 não foi usado.
