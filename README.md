@@ -20,6 +20,8 @@ Recorte metodológico: bioma Amazônia no Brasil, sensor AQUA_M-T, desenvolvimen
 | [etapa1.ipynb](etapa1.ipynb) | Comparação com `DecisionTreeClassifier`, cinco folds, contas dos três primeiros níveis e discussão de monotonicidade |
 | [linear.py](linear.py) | Regressão univariada por fórmula fechada, multivariada/Ridge por gradiente e logística com sigmoide estável |
 | [etapa2.ipynb](etapa2.ipynb) | Comparações com `LinearRegression`, `Ridge` e `LogisticRegression`, convergência e curva de coeficientes × lambda |
+| [probabilidade.py](probabilidade.py) | Conjunta de variáveis binárias, marginais, condicionais, regra da cadeia, Bayes, independência condicional e bootstrap por município, com NumPy |
+| [etapa3.ipynb](etapa3.ipynb) | Conjunta FRP elevada × período longo sem chuva, Bayes causal/diagnóstico, regra da cadeia com 3 variáveis, independência condicional dada a classe, estabilidade nos 5 folds e sensibilidade |
 
 Os algoritmos próprios ficam nos módulos; os ajustes das bibliotecas ficam nos notebooks. A comparação adicional com `Ridge` e os diagnósticos temporais são escolhas do projeto. A especificação exige explicitamente as comparações com a árvore, a regressão linear e a logística do scikit-learn.
 
