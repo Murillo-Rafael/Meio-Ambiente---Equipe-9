@@ -10,13 +10,15 @@ Pipeline de aprendizado em 6 etapas, do aprendizado simbólico à lógica fuzzy,
 
 ## Equipe
 
-| Nome | E-mail | Etapa(s) |
-|------|--------|----------|
-| [A PREENCHER] | [A PREENCHER] | [A PREENCHER] |
-| [A PREENCHER] | [A PREENCHER] | Etapa 4 |
-| [A PREENCHER] | [A PREENCHER] | [A PREENCHER] |
+| Nome | E-mail|
+|------|--------|
+Matheus Henrique de Oliveira Garcia |matheus.garcia@icomp.ufam.edu.br
+Samuel de Sousa Castro | samuel.castro@icomp.ufam.edu.br
+Gabriel Gregório dos Santos Vitor | gabriel.vitor@icomp.ufam.edu.br
+Murillo Rafael de Alcântara Mota | murillo.alcantara@icomp.ufam.edu.br
+Lucas Melo dos Santos | lucas.melo@icomp.ufam.edu.br
 
----
+--
 
 ## O pipeline
 
